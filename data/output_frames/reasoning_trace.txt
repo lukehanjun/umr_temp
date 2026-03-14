@@ -1,0 +1,44 @@
+Task: Stack the three markers into a vertical tower so they stand upright on the table
+Model: anthropic/claude-opus-4-6  |  Steps: 3
+
+======================================================================
+CHAIN-OF-THOUGHT
+======================================================================
+Let me analyze the scene. I can see three markers on the table:
+1. A black Expo marker (dry erase)
+2. A red Expo marker (dry erase)
+3. A green Expo marker (dry erase)
+
+The task is to stack these three markers into a vertical tower so they stand upright on the table. This means one marker standing upright on the table, then another balanced on top of it, and a third on top of that.
+
+To build a vertical tower of markers standing upright:
+1. First, one marker needs to be standing upright (vertically, on its cap end) on the table.
+2. Then a second marker needs to be balanced upright on top of the first marker.
+3. Then a third marker needs to be balanced upright on top of the second marker.
+
+Actually, let me reconsider. Stacking markers into a vertical tower - markers are cylindrical. Standing "upright" likely means each marker is oriented vertically (cap down or cap up). But stacking them on top of each other vertically would be very unstable since the cap end and the tip end are both relatively small surfaces.
+
+A more practical interpretation: the markers are stacked vertically, meaning placed one on top of another, all oriented vertically. The flat cap end of one marker sits on the table, and another marker's cap sits on top of the first marker's tip (or vice versa).
+
+Let me think about this step by step:
+- Step 1: First marker (e.g., black) is standing upright on the table (cap end down)
+- Step 2: Second marker (e.g., red) is standing upright on top of the first marker
+- Step 3: Third marker (e.g., green) is standing upright on top of the second marker
+
+Each step represents one physical change from the previous state.
+
+======================================================================
+GOAL FRAMES
+======================================================================
+
+[Step 1]
+  Description : The black Expo marker is now standing upright on the table (cap-end down), positioned in the center area of the table where the markers previously lay flat.
+  Key features: Black marker oriented vertically with cap on table surface, Marker standing on its flat cap end, Red and green markers still lying flat nearby
+
+[Step 2]
+  Description : The red Expo marker is now standing upright on top of the black marker, balanced cap-end down on the top end of the black marker.
+  Key features: Red marker oriented vertically on top of the black marker, Red marker's cap resting on the top of the black marker, Two markers forming a vertical stack, green marker still lying flat nearby
+
+[Step 3]
+  Description : The green Expo marker is now standing upright on top of the red marker, balanced cap-end down on the top end of the red marker, completing the three-marker vertical tower.
+  Key features: Three markers stacked vertically forming a tower, Green marker on top, red in the middle, black on the bottom, All three markers oriented upright with caps pointing downward, Tower standing on the table surface
