@@ -50,4 +50,8 @@ class Episode(BaseModel):
     goal_frames: list[GoalFrame] = Field(default_factory=list)
     verifications: list[VerificationResult] = Field(default_factory=list)
     success: bool | None = None  # None = in progress
+    replan_count: int = 0
+    termination_reason: str | None = None
+    total_attempts: int = 0
+    planning_rounds: int = 0
     created_at: datetime = Field(default_factory=datetime.utcnow)

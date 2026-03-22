@@ -27,7 +27,15 @@ sim = [
     "mani_skill>=3.0.0b",
     "stable-baselines3>=2.3",
     "torch>=2.3",
-    "setuptools>=69",
+    "setuptools>=69,<82",
+]
+pi05 = [
+    "openpi",
+    "openpi-client",
+    "jax[cuda12]==0.5.3",
+    "chex>=0.1.88",
+    "optax>=0.2.3",
+    "websockets>=14,<16",
 ]
 
 [build-system]
@@ -36,6 +44,13 @@ build-backend = "uv_build"
 
 [tool.uv.build-backend]
 module-root = ""
+
+[tool.uv]
+override-dependencies = ["ml-dtypes==0.4.1", "tensorstore==0.1.74"]
+
+[tool.uv.sources]
+openpi = { path = "openpi", editable = true }
+openpi-client = { path = "openpi/packages/openpi-client", editable = true }
 
 [tool.ruff]
 target-version = "py311"
